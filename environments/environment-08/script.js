@@ -16,7 +16,6 @@ async function getSongs() {
 }
 
 function showSongs() {
-  document.querySelector("#songlist").innerHTML = "";
   for (const song of songs) {
     const html = /*html*/ `
 <li>${song.artist} ${song.title} ${song.duration} <button>Remove</button></li> 
