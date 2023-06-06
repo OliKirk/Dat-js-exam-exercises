@@ -65,3 +65,46 @@
 //   const guest = globalUsers.filter((user) => user.role === "guest");
 //   document.querySelector("#guest-count").textContent = guest.length;
 // }
+
+// ==================================== exersice 04 ===============================================
+
+// "use strict";
+
+// window.addEventListener("load", initApp);
+
+// let globalUsers = [];
+
+// async function initApp() {
+//   console.log("hej");
+//   globalUsers = await getUsers();
+//   createUser("bobo", true, "26");
+// }
+
+// async function getUsers() {
+//   const response = await fetch("users.json");
+//   const data = response.json();
+//   return data;
+// }
+
+// function displayUsers(listOfUsers) {
+//   for (const user of listOfUsers)
+//     if (user.active === true) {
+//       {
+//         const html = /*html*/ `
+//         <li>${user.name} ${user.active} ${user.role} </li>`;
+//         document.querySelector("#userlist").insertAdjacentHTML("beforeend", html);
+//       }
+//     }
+// }
+
+// function createUser(name, active, role) {
+//   const user = {
+//     name: name,
+//     active: active,
+//     role: role,
+//   };
+//   globalUsers.push(user);
+//   console.log(globalUsers);
+
+//   displayUsers(globalUsers);
+// }
